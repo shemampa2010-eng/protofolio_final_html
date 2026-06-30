@@ -11,7 +11,14 @@
             gap: 20px;
         }
 
-        .achievement{
+        #skills-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .achievement, .skill{
             padding: 15px;
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 20px;
@@ -41,6 +48,10 @@
             border-radius: 20px;
 
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        h3{
+            text-align: center;
         }
 
         body {
@@ -96,6 +107,7 @@
     <nav>
         <a href="#Who I am" style="margin-right:30px;">Who I am</a>
         <a href="#ACHIEVEMENTS-container">ACHIEVEMENTS</a>
+        <a href="#SKILLS" style="margin-left: 30px;">SKILLS</a>
     </nav>
 
     <header>
@@ -134,23 +146,52 @@
                 <div class="achievement">
                     <p>Design: Can design posters, pictures and videos.</p>
                     <img src="dance.png" width="330px">
-                    <img src="Screenshot 2026-06-30 133509.png" height="250px" width="330">
-                    <br><br>
-                    <p>Continue on my <a href="https://www.instagram.com/lostarchives.art/">instagram</a></p>
                 </div>
 
                 <div class="achievement">
                     <p>Programming: Learned Python, HTML and CSS, and created my first website.</p>
-                    <img src="first_website.png" alt="image" height="250px" width="330">
-                    <br><br>
-                    <p>Continue on <a href="https://portofolio-suite-html.tiiny.site/">the site</a> </p>
+                    <img src="first_website.png" height="250px" width="330px">
                 </div>
 
                 <div class="achievement">
                     <p>Personal: Ran my first 5 km in 27 minutes and hiked many hills.</p>
-                    <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg" alt="image" width="330px">
-                    <br>
-                    <a href="https://strava.app.link/CCY489yzo4b">My stava account</a>
+                    <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg" width="330px" height="350px">
+                </div>
+
+            </div>
+        </section>
+
+        <br><br>
+
+        <section id="SKILLS">
+            <h2>SKILLS</h2>
+
+            <br><br>
+
+            <div id="skills-container">
+
+                <div class="skill">
+                    <h3>Designer</h3>
+                    <p>
+                        I create visual content such as posters, graphics, and videos.
+                        I use tools like Canva and Figma to design clean and modern visuals.
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>Programmer</h3>
+                    <p>
+                        I have experience with Python, HTML, and CSS.
+                        I enjoy building websites and improving their structure and design.
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>Content Creator</h3>
+                    <p>
+                        I create and share content online.
+                        I enjoy expressing ideas and sharing my work through digital platforms.
+                    </p>
                 </div>
 
             </div>
