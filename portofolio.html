@@ -1,68 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <nav>
-            <a href="#Who I am" style="margin-right: 30px;">Who I am</a> <a href="#ACHIVEMENTS">ACHIEVEMENT</a>
-        </nav>
-        <title>
-            Portofolio de Paulin
-        </title>
-        <style>
-            header{
-                text-align: center;
-            }
-            body{
-                min-height: 100vh;
-                background: linear-gradient(to bottom, rgb(230, 239, 66), rgb(245, 57, 57));
-                color: rgb(4, 0, 86);
-                margin: 0;
-                padding: 20px 30px;
-            }
-            h3{
-                text-align: left;
-            }
-            p{
-                max-width: 600px;
-                text-align: justify;
-            }
-            nav{
-                
-                text-align: right;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>WELCOME TO MY PORTOFOLIO</h1>
-            <img src="download.webp" alt="Profil Picture" width="200">
-            <br><br>
-        </header>
-        <main>
-            <section id="Who I am">
-                <h2>Who I am ?</h2>
-                <p>
-                
-                    Hello! My name is Paulin. I am passionate about web development and programming.
-                    I enjoy creating websites and learning new technologies every day.
-                
-                </p>
-            </section>     
-            <br><br><br>
-            <section id="ACHIVEMENTS">
-                <h2>
-                    ACHIVEMENTS
-                </h2>
-                <p>
-                    <ul>
-                        <li>designs : Can desing poster, pictures, even videos</li>
-                        <li>programming : Learned python , HTML , CSS, and created my first website</li>
-                        <li>personal : Ran my first 5km in 27min , hiked many hills </li>
-                    </ul>
-                </p>
-            </section>
-        </main>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+    <title>Portfolio de Paulin</title>
+
+    <style>
+        h2{
+            width: fit-content;
+            margin: auto;
+            padding: 15px;
+
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 30px;
+            color: rgb(30, 30, 30);
+
+            background: linear-gradient(
+                140deg,
+                #efefef 0%,
+                #dcdcdc 30%,
+                #bfbfbf 60%,
+                #a9a9a9 80%,
+                #d5d5d5 100%
+            );
+        }
+
+        nav {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .glass-container {
+            width: fit-content;
+            margin: auto;
+            padding: 10px;
+
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .glass-container2 {
+            width: fit-content;
+            margin: auto;
+            padding: 15px;
+
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        p {
+            max-width: 600px;
+            text-align: justify;
+        }
+        .download.html {
+            filter: blur(7px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#Who I am" style="margin-right:30px;">Who I am</a>
+        <a href="#ACHIVEMENTS">ACHIEVEMENTS</a>
+    </nav>
+
+    <header>
+        <div class="glass-container">
+            <h1>WELCOME TO MY PORTFOLIO</h1>
+        </div>
+        <br><br>
+        <div class="glass-container2">
+            <img src="Screenshot 2026-06-30 105901.png"
+                alt="Profile Picture"
+                width="800">
+        </div>
+
+        <br><br>
+    </header>
+
+    <main>
+
+        <section id="Who I am">
+            <h2>Who I am?</h2>
+            <br><br><br>
+
+            <p>
+                Hello! My name is Paulin. I am passionate about web development and programming.
+                I enjoy creating websites and learning new technologies every day.
+            </p>
+        </section>
+
+        <br><br><br>
+
+        <section id="ACHIVEMENTS">
+            <h2>ACHIEVEMENTS</h2>
+            <br><br>
+
+            <ul>
+                <li>Design: Can design posters, pictures and videos.</li>
+                <li>Programming: Learned Python, HTML and CSS, and created my first website.</li>
+                <li>Personal: Ran my first 5 km in 27 minutes and hiked many hills.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+
 </html>
