@@ -105,6 +105,7 @@
             margin-top: 80px;
         }
 
+        /* GRIDS RESPONSIVES */
         #ACHIEVEMENTS-container,
         #skills-container {
             display: grid;
@@ -160,13 +161,19 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* ABOUT ME CENTER FIX */
+        #about-me p {
+            margin: 0 auto;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
     <nav>
-        <a href="#who-I-am" style="margin-right:15px;">Who I am</a>
+        <a href="#about-me" style="margin-right:15px;">About me</a>
         <a href="#achievement">ACHIEVEMENTS</a>
         <a href="#SKILLS" style="margin-left: 15px;">SKILLS</a>
         <a href="#Contact" style="margin-left: 15px;">Contact</a>
@@ -184,12 +191,17 @@
 
     <main>
 
-        <section id="who-I-am">
-            <h2>Who I am?</h2>
-            <p>
-                Hello! My name is Paulin. I am passionate about web development and programming.
-                I enjoy creating websites and learning new technologies every day.
-            </p>
+        <section id="about-me">
+            <h2>About me</h2>
+
+            <div style="display:flex; justify-content:center;">
+                <p>
+                    Hi, I'm Paulin—a passionate full stack developer with a keen eye for design. 
+                    I specialize in building modern web applications using Python, HTML, CSS, and JavaScript. 
+                    My approach combines clean code with creative problem-solving to deliver strong user experiences. 
+                    When I'm not coding, you'll find me running trails, creating digital art, or exploring new technologies.
+                </p>
+            </div>
         </section>
 
         <section id="achievement">
@@ -219,23 +231,23 @@
         </section>
 
         <section id="SKILLS">
-            <h2>SKILLS</h2>
+            <h2>Technical Skills</h2>
 
             <div id="skills-container">
 
                 <div class="skill">
-                    <h3>Designer</h3>
-                    <p>Canva & Figma, clean visuals.</p>
+                    <h3>UI/UX Design</h3>
+                    <p>Canva & Figma, clean modern visuals.</p>
                 </div>
 
                 <div class="skill">
-                    <h3>Programmer</h3>
-                    <p>Python, HTML, CSS.</p>
+                    <h3>Software Development</h3>
+                    <p>Python, HTML, CSS, responsive websites.</p>
                 </div>
 
                 <div class="skill">
                     <h3>Content Creator</h3>
-                    <p>Digital content and ideas.</p>
+                    <p>Digital storytelling and online content.</p>
                 </div>
 
             </div>
