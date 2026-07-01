@@ -5,78 +5,8 @@
     <title>Portfolio de Paulin</title>
 
     <style>
-        footer {
-            background-color: #4f5d67;
-            color: white;
-            margin-top: 70px;
-            padding: 35px 20px;
-            text-align: center;
-        }
-
-        footer h3 {
-            margin-bottom: 10px;
-        }
-
-        footer p {
-            margin: 8px 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: #b8e6ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-        #ACHIEVEMENTS-container{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        #skills-container{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .achievement, .skill{
-            padding: 15px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        img{
-            max-width: 800px;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-        }
-
-        h2{
-            width: fit-content;
-            margin: auto;
-            padding: 15px;
-
-            background: rgba(255, 255, 255, 0);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 20px;
-
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        h3{
-            text-align: center;
+        * {
+            box-sizing: border-box;
         }
 
         body {
@@ -104,9 +34,24 @@
             text-align: center;
         }
 
-        .glass-container,
-        .glass-container2 {
+        .glass-container {
             width: fit-content;
+            margin: 0 auto 20px auto;
+            padding: 12px 20px;
+
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .glass-container2 {
+            width: 100%;
+            max-width: 900px;
             margin: auto;
             padding: 10px;
 
@@ -120,9 +65,100 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
+        .glass-container2 img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            width: fit-content;
+            margin: 0 auto 40px auto;
+            padding: 15px;
+
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
         p {
             max-width: 600px;
             text-align: justify;
+        }
+
+        section {
+            margin-top: 80px;
+        }
+
+        #ACHIEVEMENTS-container,
+        #skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .achievement, .skill {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+            margin: 10px auto;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            background-color: #4f5d67;
+            color: white;
+            margin-top: 70px;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 8px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #b8e6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -130,7 +166,7 @@
 <body>
 
     <nav>
-        <a href="#Who-I-am" style="margin-right:15px;">Who I am</a>
+        <a href="#who-I-am" style="margin-right:15px;">Who I am</a>
         <a href="#achievement">ACHIEVEMENTS</a>
         <a href="#SKILLS" style="margin-left: 15px;">SKILLS</a>
         <a href="#Contact" style="margin-left: 15px;">Contact</a>
@@ -141,98 +177,75 @@
             <h1>WELCOME TO MY PORTFOLIO</h1>
         </div>
 
-        <br><br>
-
         <div class="glass-container2">
-            <img src="Screenshot 2026-06-30 105901.png" alt="Profile Picture" width="800">
+            <img src="Screenshot 2026-06-30 105901.png" alt="Profile Picture">
         </div>
     </header>
 
     <main>
 
-        <section id="Who-I-am">
-            <br><br><br>
+        <section id="who-I-am">
             <h2>Who I am?</h2>
-
             <p>
                 Hello! My name is Paulin. I am passionate about web development and programming.
                 I enjoy creating websites and learning new technologies every day.
             </p>
         </section>
 
-        <br><br>
-
         <section id="achievement">
             <h2>ACHIEVEMENTS</h2>
-
-            <br><br>
 
             <div id="ACHIEVEMENTS-container">
 
                 <div class="achievement">
-                    <p>Creative: Designs posters, pictures and videos. Have an account for that.</p>
-                    <img src="dance.png" width="330px" height="250px">
+                    <p>Creative: Designs posters, pictures and videos.</p>
+                    <img src="dance.png">
                     <a href="https://www.instagram.com/lostarchives.art/" target="_blank">More on IG</a>
                 </div>
 
                 <div class="achievement">
-                    <p>Programming: Learned Python, HTML and CSS, and created my first website.</p>
-                    <img src="first_website.png" height="250px" width="330px">
-                    <a href="https://portofolio-suite-html.tiiny.site/index.html" target="_blank">See the whole website</a>
+                    <p>Programming: Learned Python, HTML and CSS.</p>
+                    <img src="first_website.png">
+                    <a href="https://portofolio-suite-html.tiiny.site/index.html" target="_blank">Website</a>
                 </div>
 
                 <div class="achievement">
-                    <p>Personal: Ran my first 5 km in 27 minutes and hiked many hills.</p>
-                    <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg" width="330px" height="250px">
-                    <a href="https://strava.app.link/CCY489yzo4b" target="_blank">My Strava account</a>
+                    <p>Personal: Running and hiking achievements.</p>
+                    <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg">
+                    <a href="https://strava.app.link/CCY489yzo4b" target="_blank">Strava</a>
                 </div>
 
             </div>
         </section>
 
-        <br><br>
-
         <section id="SKILLS">
             <h2>SKILLS</h2>
-
-            <br><br>
 
             <div id="skills-container">
 
                 <div class="skill">
                     <h3>Designer</h3>
-                    <p>
-                        I create visual content such as posters, graphics, and videos.
-                        I use tools like Canva and Figma to design clean and modern visuals.
-                    </p>
+                    <p>Canva & Figma, clean visuals.</p>
                 </div>
 
                 <div class="skill">
                     <h3>Programmer</h3>
-                    <p>
-                        I have experience with Python, HTML, and CSS.
-                        I enjoy building websites and improving their structure and design.
-                    </p>
+                    <p>Python, HTML, CSS.</p>
                 </div>
 
                 <div class="skill">
                     <h3>Content Creator</h3>
-                    <p>
-                        I create and share content online.
-                        I enjoy expressing ideas and sharing my work through digital platforms.
-                    </p>
+                    <p>Digital content and ideas.</p>
                 </div>
 
             </div>
         </section>
 
     </main>
+
     <footer id="Contact">
-        
         <h3>Thank you for visiting my portfolio!</h3>
-
-        <p>© 2026 Paulin. All rights reserved.</p>
-
+        <p>© 2026 Paulin</p>
         <p>
             Contact:
             <a href="mailto:shemampa2010@gmail.com">Send me a mail</a>
