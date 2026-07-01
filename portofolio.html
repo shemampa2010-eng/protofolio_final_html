@@ -12,11 +12,16 @@
         #SKILLS p {
             text-align: center;
         }
-
+        .fr{
+            margin: 100px 30px 20px;
+        }
+        .rf{
+            margin: 0 30px 20px;
+        }
         body {
             min-height: 100vh;
             margin: 0;
-            padding: 100px 30px 20px;
+            
             color: rgb(30, 30, 30);
 
             background: linear-gradient(
@@ -103,7 +108,7 @@
             margin: 0;
         }
 
-        h2 {
+        .title{
             width: fit-content;
             margin: 0 auto 40px auto;
             padding: 15px;
@@ -222,7 +227,7 @@
 
 <body>
 
-    <nav>
+    <nav class="rf">
         <a href="#paulin" style="margin-right: 550px">Paulin</a>
         <a href="#about-me" style="margin-right:15px;">About me</a>
         <a href="#achievement">ACHIEVEMENTS</a>
@@ -230,7 +235,7 @@
         <a href="#Contact" style="margin-left: 15px;">Contact</a>
     </nav>
 
-    <header id="paulin">
+    <header id="paulin" class="fr">
         <div class="glass-container">
             <h1>WELCOME TO MY PORTFOLIO</h1>
         </div>
@@ -240,10 +245,10 @@
         </div>
     </header>
 
-    <main>
+    <main class="fr">
 
-        <section id="about-me">
-            <h2>About me</h2>
+        <section id="about-me" >
+            <h2 class="title">About me</h2>
 
             <div style="display:flex; justify-content:center;">
                 <p>
@@ -256,23 +261,26 @@
         </section>
 
         <section id="achievement">
-            <h2>ACHIEVEMENTS</h2>
+            <h2 class="title">ACHIEVEMENTS</h2>
 
             <div id="ACHIEVEMENTS-container">
 
                 <div class="achievement">
+                    <h2>Creative Designer</h2>
                     <p>Creative: Designs posters, pictures and videos.</p>
                     <img src="dance.png">
                     <a href="https://www.instagram.com/lostarchives.art/" target="_blank">More on IG</a>
                 </div>
 
                 <div class="achievement">
+                    <h2>Web Development</h2>
                     <p>Programming: Learned Python, HTML and CSS.</p>
                     <img src="first_website.png">
                     <a href="https://portofolio-suite-html.tiiny.site/index.html" target="_blank">Website</a>
                 </div>
 
                 <div class="achievement">
+                    <h2>Fitness Enthusiast</h2>
                     <p>Personal: Running and hiking achievements.</p>
                     <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg">
                     <a href="https://strava.app.link/CCY489yzo4b" target="_blank">Strava</a>
@@ -282,7 +290,7 @@
         </section>
 
         <section id="SKILLS">
-            <h2>Technical Skills</h2>
+            <h2 class="title">Technical Skills</h2>
 
             <div id="skills-container">
 
