@@ -12,17 +12,16 @@
         #SKILLS p {
             text-align: center;
         }
-        .fr{
-            margin: 100px 30px 20px;
+        
+        .fr {
+            margin: 120px 30px 20px;
         }
-        .rf{
-            margin: 0 30px 20px;
-        }
+        
         body {
             min-height: 100vh;
             margin: 0;
-            
             color: rgb(30, 30, 30);
+            font-family: sans-serif; 
 
             background: linear-gradient(
                 140deg,
@@ -35,9 +34,17 @@
         }
 
         nav {
-            width: fit-content;
-            margin: 0 0 40px auto;
+            position: fixed;
+            top: 20px;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            z-index: 1000;
             padding: 15px 25px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(15px);
@@ -45,9 +52,14 @@
 
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 18px;
-
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
         nav a {
             color: black;
             text-decoration: none;
@@ -61,6 +73,7 @@
             background-color: rgba(255, 255, 255, 0.5);
             transform: scale(1.05);
         }
+
         header {
             text-align: center;
         }
@@ -70,106 +83,137 @@
             margin: 0 auto 20px auto;
             padding: 12px 20px;
 
-            background: rgba(255, 255, 255, 0);
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
 
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 20px;
-
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .glass-container2 {
-            width: 100%;
-            max-width: 900px;
-            margin: auto;
+        #about-me {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 80px auto 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .profile-img-container {
+            flex: 1;
+            max-width: 400px;
+            min-width: 280px;
             padding: 10px;
-
-            background: rgba(255, 255, 255, 0);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
-
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 20px;
-
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .glass-container2 img {
+        .profile-img-container img {
             width: 100%;
-            height: 450px;
+            height: 350px;
             object-fit: cover;
             border-radius: 15px;
             display: block;
         }
 
-        h1 {
-            margin: 0;
+        .about-text {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .title{
+        .title {
             width: fit-content;
-            margin: 0 auto 40px auto;
+            margin: 0 auto 20px auto;
             padding: 15px;
 
-            background: rgba(255, 255, 255, 0);
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
 
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 20px;
-
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        h3 {
-            text-align: center;
         }
 
         p {
             max-width: 600px;
             text-align: justify;
+            line-height: 1.6;
         }
 
         section {
-            margin-top: 80px;
+            margin-top: 100px;
         }
 
         #ACHIEVEMENTS-container,
         #skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         .achievement, .skill {
-            padding: 15px;
+            padding: 20px;
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        img {
+        .achievement img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
             border-radius: 15px;
             display: block;
-            margin: 10px auto;
+            margin: 15px auto;
             transition: 0.3s;
         }
 
-        img:hover {
+        .achievement img:hover {
             transform: scale(1.03);
+        }
+
+        .achievement a {
+            display: block;
+            text-align: center;
+            margin-top: auto;
+            padding: 8px 15px;
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        .achievement a:hover {
+            transform: scale(1.05);
+            background-color: black;
+            color: white;
         }
 
         footer {
             background-color: #4f5d67;
             color: white;
-            margin-top: 70px;
+            margin-top: 100px;
             padding: 35px 20px;
             text-align: center;
         }
@@ -181,6 +225,7 @@
         footer p {
             margin: 8px 0;
             text-align: center;
+            max-width: 100%;
         }
 
         footer a {
@@ -191,66 +236,36 @@
         footer a:hover {
             text-decoration: underline;
         }
-
-        #about-me p {
-            margin: 0 auto;
-            text-align: center;
-        }
-        .achievement a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 15px;
-
-            color: black;
-            text-decoration: none;
-
-            border: 2px solid black;
-            border-radius: 8px;
-
-            transition: transform 0.3s, background-color 0.3s, color 0.3s;
-        }
-
-        .achievement a:hover {
-            transform: scale(1.08);
-            background-color: black;
-            color: white;
-        }
-        nav{
-            position: fixed;
-            top: 20px;
-            width: 93%;
-            z-index: 1000;
-        }
-
     </style>
 </head>
 
 <body>
 
-    <nav class="rf">
-        <a href="#paulin" style="margin-right: 550px">Paulin</a>
-        <a href="#about-me" style="margin-right:15px;">About me</a>
-        <a href="#achievement">ACHIEVEMENTS</a>
-        <a href="#SKILLS" style="margin-left: 15px;">SKILLS</a>
-        <a href="#Contact" style="margin-left: 15px;">Contact</a>
+    <!-- Navigation optimisée -->
+    <nav>
+        <a href="#paulin" class="logo">Paulin</a>
+        <div class="nav-links">
+            <a href="#about-me">About me</a>
+            <a href="#achievement">Achievements</a>
+            <a href="#SKILLS">Skills</a>
+            <a href="#Contact">Contact</a>
+        </div>
     </nav>
 
     <header id="paulin" class="fr">
         <div class="glass-container">
             <h1>WELCOME TO MY PORTFOLIO</h1>
         </div>
-
-        <div class="glass-container2">
-            <img src="Screenshot 2026-06-30 105901.png" alt="Profile Picture">
-        </div>
     </header>
 
     <main class="fr">
-
-        <section id="about-me" >
-            <h2 class="title">About me</h2>
-
-            <div style="display:flex; justify-content:center;">
+        <section id="about-me">
+            <div class="profile-img-container">
+                <img src="Screenshot 2026-06-30 105901.png" alt="Profile Picture">
+            </div>
+            
+            <div class="about-text">
+                <h2 class="title">About me</h2>
                 <p>
                     Hello everyone! My name is Paulin. I'm funny. 
                     Besides that, I'm also passionate about discovering 
@@ -264,28 +279,32 @@
             <h2 class="title">ACHIEVEMENTS</h2>
 
             <div id="ACHIEVEMENTS-container">
-
                 <div class="achievement">
-                    <h2>Creative Designer</h2>
-                    <p>On the creative side I designs posters, pictures and videos.</p>
-                    <img src="dance.png">
+                    <div>
+                        <h2>Creative Designer</h2>
+                        <p>On the creative side, I design posters, pictures and videos.</p>
+                    </div>
+                    <img src="dance.png" alt="Creative Design Work">
                     <a href="https://www.instagram.com/lostarchives.art/" target="_blank">More on IG</a>
                 </div>
 
                 <div class="achievement">
-                    <h2>Web Development</h2>
-                    <p>I recently started learning Python, HTML and CSS.</p>
-                    <img src="first_website.png">
+                    <div>
+                        <h2>Web Development</h2>
+                        <p>I recently started learning Python, HTML and CSS.</p>
+                    </div>
+                    <img src="first_website.png" alt="Web Project Screenshot">
                     <a href="https://portofolio-suite-html.tiiny.site/index.html" target="_blank">Website</a>
                 </div>
 
                 <div class="achievement">
-                    <h2>Fitness Enthusiast</h2>
-                    <p>Not gonna lie, my ego grows as my performance improves.</p>
-                    <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg">
+                    <div>
+                        <h2>Fitness Enthusiast</h2>
+                        <p>Not gonna lie, my ego grows as my performance improves.</p>
+                    </div>
+                    <img src="59C9ACEF-88B3-4779-A534-014D7EF2715F.jpeg" alt="Fitness Activity">
                     <a href="https://strava.app.link/CCY489yzo4b" target="_blank">Strava</a>
                 </div>
-
             </div>
         </section>
 
@@ -293,29 +312,27 @@
             <h2 class="title">Technical Skills</h2>
 
             <div id="skills-container">
-
                 <div class="skill">
                     <h3>UI/UX Design</h3>
                     <p>Crafting intuitive interfaces with Canva & Figma. 
-                        Focus on user-centered design and clean visual aesthetics 
-                        that enhance user experience.</p>
+                       Focus on user-centered design and clean visual aesthetics 
+                       that enhance user experience.</p>
                 </div>
 
                 <div class="skill">
                     <h3>Software Development</h3>
                     <p>Backend development with Python, 
-                        frontend technologies including HTML5 and CSS3, with 
-                        emphasis on responsive design and modern web standards.</p>
+                       frontend technologies including HTML5 and CSS3, with 
+                       emphasis on responsive design and modern web standards.</p>
                 </div>
 
                 <div class="skill">
                     <h3>Content Creator</h3>
                     <p>I’ve just started creating content. 
-                        I like sharing ideas and thinking about 
-                        philosophical topics in a simple and honest way.
+                       I like sharing ideas and thinking about 
+                       philosophical topics in a simple and honest way.
                     </p>
                 </div>
-
             </div>
         </section>
 
